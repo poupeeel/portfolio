@@ -28,8 +28,8 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
+  { label: "Years of experience", value: "5+" },
+  { label: "Technologies mastered", value: "10+" },
   { label: "Companies worked with", value: "15+" },
 ];
 
@@ -206,7 +206,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  PoupelSystems.
                 </span>
               </h1>
               <p
@@ -225,11 +225,17 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ayoubboubalgha63@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              >
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
+
               <Button
                 variant="outline"
                 onClick={() => scrollTo(document.querySelector("#about"))}
@@ -268,21 +274,58 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
-            </h2>
+           <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+  I'm a professional full-stack developer with deep expertise in{" "}
+  <Link
+    href="https://reactjs.org/"
+    target="_blank"
+    className="underline"
+  >
+    React
+  </Link>
+  ,{" "}
+  <Link
+    href="https://nextjs.org/"
+    target="_blank"
+    className="underline"
+  >
+    Next.js
+  </Link>
+  ,{" "}
+  <Link
+    href="https://laravel.com/"
+    target="_blank"
+    className="underline"
+  >
+    Laravel
+  </Link>
+  ,{" "}
+  <Link
+    href="https://getbootstrap.com/"
+    target="_blank"
+    className="underline"
+  >
+    Bootstrap
+  </Link>
+  ,{" "}
+  <Link
+    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    target="_blank"
+    className="underline"
+  >
+    JavaScript
+  </Link>{" "}
+  and{" "}
+  <Link
+    href="https://www.typescriptlang.org/"
+    target="_blank"
+    className="underline"
+  >
+    TypeScript
+  </Link>
+  . Since 2021, I’ve delivered robust web applications for startups and mid-sized companies, playing a key role throughout the entire product lifecycle—from ideation and wireframing, to development and final delivery—while collaborating effectively with cross-functional teams.
+</h2>
+
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
                 <div
@@ -446,9 +489,10 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
+           <Link href="mailto:ayoubboubalgha63@gmail.com" passHref>
+                <Button className="mt-6">Get in touch</Button>
+          </Link>
+
           </div>
         </section>
       </div>
