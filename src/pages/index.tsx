@@ -84,7 +84,7 @@ const services = [
   {
     service: "SEO Optimization",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Enhancing your websiteI&rsquo;ms visibility in search engines for increased organic traffic.",
     icon: SearchCheck,
   },
   {
@@ -283,7 +283,7 @@ export default function Home() {
             className="my-6 flex max-w-6xl flex-col justify-start space-y-4"
           >
            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-  I m a professional full-stack developer with deep expertise in{" "}
+  I&apos;m a developer a professional full-stack developer with deep expertise in{" "}
   <Link
     href="https://reactjs.org/"
     target="_blank"
