@@ -35,35 +35,37 @@ const aboutStats = [
 
 const projects = [
   {
-    title: "Unqueue",
+    title: "Mastefut",
     description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    image: "/assets/unqueue.mp4",
+    href: "https://www.masterfut.com/",
   },
+   {
+    title: "Garage stock management",
+    description: "High performance intern system of a garage ",
+    image: "/assets/garagevideo.mp4",
+    href: "#",
+  },  
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
+    title: "Martinacar",
+    description: "High performance intern system of a rental car agency ",
+    image: "/assets/martinacarimage.png",
+    href: "#",
+  },
+ 
+  {
+    title: "Appromoteur",
+    description: "High performance intern system of real estate management",
+    image: "/assets/appromoteurimage.jpg",
     href: "#",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
-  },
+    title: "Spalace",
+    description: "High performance intern system for a royal palace ",
+    image: "/assets/saudielogo.webp",
+    href: "#",
+  }
+ 
 ];
 
 const services = [
@@ -190,9 +192,15 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
+              <span className={styles.pill}>Next.js</span>
+              <span className={styles.pill}>Node.js</span>
+              <span className={styles.pill}>React.js</span>
+              <span className={styles.pill}>Laravel</span>
+              <span className={styles.pill}>MySql</span>
+              <span className={styles.pill}>Tailwindcss</span>
+              <span className={styles.pill}>Bootstrap</span>
               <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>javascript</span>
             </div>
             <div>
               <h1
@@ -272,10 +280,10 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
+            className="my-6 flex max-w-6xl flex-col justify-start space-y-4"
           >
            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-  I'm a professional full-stack developer with deep expertise in{" "}
+  I m a professional full-stack developer with deep expertise in{" "}
   <Link
     href="https://reactjs.org/"
     target="_blank"
@@ -326,7 +334,7 @@ export default function Home() {
   . Since 2021, I’ve delivered robust web applications for startups and mid-sized companies, playing a key role throughout the entire product lifecycle—from ideation and wireframing, to development and final delivery—while collaborating effectively with cross-functional teams.
 </h2>
 
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+            <div className="grid grid-cols-2 xl:grid-cols-3">
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
@@ -361,7 +369,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div data-scroll data-scroll-speed=".4" className="my-64">
+          <div data-scroll data-scroll-speed=".4" className="my-6">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Projects
             </span>
@@ -382,7 +390,7 @@ export default function Home() {
                       <Card id="tilt">
                         <CardHeader className="p-0">
                           <Link href={project.href} target="_blank" passHref>
-                            {project.image.endsWith(".webm") ? (
+                            {project.image.endsWith(".mp4") ? (
                               <video
                                 src={project.image}
                                 autoPlay
@@ -430,7 +438,7 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="my-24 flex flex-col justify-start space-y-10"
+            className="my-6 flex flex-col justify-start space-y-10"
           >
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -474,7 +482,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="my-64">
+        <section id="contact" data-scroll-section className="my-6">
           <div
             data-scroll
             data-scroll-speed=".4"
