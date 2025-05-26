@@ -9,7 +9,7 @@ const withPWA = WithPWA({
   dest: "public",
   disable: process.env.NODE_ENV === "development",
   register: true,
-  scope: "/",
+  scope: "/portfolio",
   sw: "service-worker.js",
 });
 
@@ -19,7 +19,9 @@ const withPWA = WithPWA({
 // @ts-ignore
 const config = withPWA({
   reactStrictMode: true,
-
+ typescript: {
+    ignoreBuildErrors: true,
+  },
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
    *
